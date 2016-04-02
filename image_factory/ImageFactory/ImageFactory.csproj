@@ -1,0 +1,187 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6572082E-685A-4726-963B-A2578EDDD382}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ImageFactory</RootNamespace>
+    <AssemblyName>ImageFactory</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GaussFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GaussFilterForm.Designer.cs">
+      <DependentUpon>GaussFilterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GenericFilterSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GenericFilterSettingsForm.Designer.cs">
+      <DependentUpon>GenericFilterSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistogramControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="HistogramControl.Designer.cs">
+      <DependentUpon>HistogramControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="mainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainForm.Designer.cs">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MorphFiltersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MorphFiltersForm.Designer.cs">
+      <DependentUpon>MorphFiltersForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NormalizeHistoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NormalizeHistoForm.Designer.cs">
+      <DependentUpon>NormalizeHistoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PaletteControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PaletteControl.Designer.cs">
+      <DependentUpon>PaletteControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegionControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegionControl.Designer.cs">
+      <DependentUpon>RegionControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ThresholdHistoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThresholdHistoForm.Designer.cs">
+      <DependentUpon>ThresholdHistoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UnsharpFilterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnsharpFilterForm.Designer.cs">
+      <DependentUpon>UnsharpFilterForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GaussFilterForm.resx">
+      <DependentUpon>GaussFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GenericFilterSettingsForm.resx">
+      <DependentUpon>GenericFilterSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistogramControl.resx">
+      <DependentUpon>HistogramControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>mainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MorphFiltersForm.resx">
+      <DependentUpon>MorphFiltersForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NormalizeHistoForm.resx">
+      <DependentUpon>NormalizeHistoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PaletteControl.resx">
+      <DependentUpon>PaletteControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegionControl.resx">
+      <DependentUpon>RegionControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ThresholdHistoForm.resx">
+      <DependentUpon>ThresholdHistoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnsharpFilterForm.resx">
+      <DependentUpon>UnsharpFilterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ImageLibrary\ImageLibrary.csproj">
+      <Project>{d2c4a9ed-0acc-4c88-b07e-c854b536de79}</Project>
+      <Name>ImageLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\select.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\palette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\emptyback.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

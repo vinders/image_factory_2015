@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageFactory", "ImageFactory\ImageFactory.csproj", "{6572082E-685A-4726-963B-A2578EDDD382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLibrary", "ImageLibrary\ImageLibrary.csproj", "{D2C4A9ED-0ACC-4C88-B07E-C854B536DE79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextureAnalyst", "TextureAnalyst\TextureAnalyst.csproj", "{B9A08531-5D5B-41C1-B597-5D85FFB50EEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6572082E-685A-4726-963B-A2578EDDD382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6572082E-685A-4726-963B-A2578EDDD382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6572082E-685A-4726-963B-A2578EDDD382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6572082E-685A-4726-963B-A2578EDDD382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D2C4A9ED-0ACC-4C88-B07E-C854B536DE79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2C4A9ED-0ACC-4C88-B07E-C854B536DE79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2C4A9ED-0ACC-4C88-B07E-C854B536DE79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2C4A9ED-0ACC-4C88-B07E-C854B536DE79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9A08531-5D5B-41C1-B597-5D85FFB50EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9A08531-5D5B-41C1-B597-5D85FFB50EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9A08531-5D5B-41C1-B597-5D85FFB50EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9A08531-5D5B-41C1-B597-5D85FFB50EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
